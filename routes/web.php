@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PagesController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about', function () {
-    return view('pages.about');
-});
+Route::get('/about', 'PagesController@about');
+
+Route::get('/about/me','PagesController@index');
+Route::get('/about/prolanges' ,'PagesController@prolanges');
 
