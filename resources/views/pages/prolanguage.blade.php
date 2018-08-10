@@ -1,9 +1,11 @@
 
+
+ 
 @extends('layout.app')
+
     @section('content')
     <div class="container">
                 <div class="content">
-                        @include('includes.sliedeshow')
                 </div>
             <div class="content">
                 <div class="container">
