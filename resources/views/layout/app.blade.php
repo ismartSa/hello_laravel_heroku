@@ -9,7 +9,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <!-- styles 2 -->
+        <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('css/bstarp.css')}}" rel="stylesheet" type="text/css">
         <!-- Styles -->
         <style>
             html, body {
@@ -63,9 +65,11 @@
                 margin-bottom: 30px;
             }
         </style>
+        @include('includes.navbar')
     </head>
     <body>
-   
+           
+
 @yield('content')
 
     </body>

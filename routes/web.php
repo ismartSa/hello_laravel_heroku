@@ -13,12 +13,8 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
-
 Route::get('/about/me','PagesController@index');
-Route::get('/about/prolanges' ,'PagesController@prolanges');
+Route::get('/prolanguage' ,'PagesController@prolanguage');
 

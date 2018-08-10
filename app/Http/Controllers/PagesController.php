@@ -8,15 +8,15 @@ class PagesController extends Controller
 {
     //
     public function index(){
-
-        return view('pages.index');
+        $jobs = 'Dev';
+        return view('pages.index')->with('jobs',$jobs);
     }
-      public function about(){
-
-        return view('pages.about');
+    public function about(){
+        $jobs = 'Dev';
+        return view('pages.about')->with('jobs',$jobs);
     }
-    public function proLanges(){
-          
-        return view('pages.prolanges');
+    public function prolanguage(){
+        $mylang = array('c'=>'c#','p'=>'PHP','J'=>'Java');
+        return view('pages.prolanguage')->with('mylang',$mylang);
     }
 }
